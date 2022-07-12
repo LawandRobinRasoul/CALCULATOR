@@ -30,6 +30,9 @@ h1 {
 	background-color: lightgoldenrodyellow;
 	border: 2px solid black;
 	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	text-align: end;
 }
 
 .actions {
@@ -82,9 +85,9 @@ h1 {
 .action-btn:hover {
 	transform: scale(1.1);
 	border: 2px solid orange;
-    box-shadow: 0 0 40px orange;
+	box-shadow: 0 0 40px orange;
 }
-}
+
 button {
 	transition: all 0.1s ease-in-out;
 }

@@ -10,16 +10,19 @@
 			href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
 			rel="stylesheet"
 		/>
-        <script src="app.js"></script>
+		<script src="app.js" defer></script>
 	</head>
 	<h1>Miniräknare</h1>
 	<body>
 		<div class="calculator">
-			<div class="screen"> 10101001</div>
+			<div class="screen">
+				<p class="display-value">0 + 0 = 0</p>
+				<h2 class="current-number">0</h2>
+			</div>
 			<div class="actions">
-                <button class="action-btn clear"> CLEAR</button>
-                <button class="action-btn delete"> DELETE</button>
-            </div>
+				<button class="action-btn clear">CLEAR</button>
+				<button class="action-btn delete">DELETE</button>
+			</div>
 			<div class="buttons">
 				<button class="btn">7</button>
 				<button class="btn">8</button>
@@ -36,8 +39,8 @@
 				<button class="btn">.</button>
 				<button class="btn">0</button>
 				<button class="btn">=</button>
-				<button class="btn">+</button
-            </div>
+				<button class="btn">+</button>
+			</div>
 		</div>
 	</body>
 </html>
