@@ -1,6 +1,6 @@
 body {
 	background-image: url("images/numbers.gif");
-	background-color: lightcoral;
+	background-color: rgba(106, 205, 106, 0.813);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -12,6 +12,8 @@ h1 {
 	font-family: "VT323", monospace;
 	color: lightgreen;
 	text-shadow: 0 0 20px rgb(255, 0, 128);
+	margin: 0;
+	padding: 10px;
 }
 .calculator {
 	background-color: rgba(106, 205, 106, 0.813);
@@ -48,8 +50,8 @@ h1 {
 	flex: 6;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: center;
+	gap: 10px;
+	justify-content: space-around;
 }
 
 .btn {
@@ -76,7 +78,15 @@ h1 {
 	background-color: yellow;
 }
 
-.btn:hover {
+.change-btn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.btn:hover,
+.change-btn:hover {
 	color: green;
 	transform: scale(1.1);
 	border: 2px solid rgb(12, 217, 12);
@@ -90,4 +100,8 @@ h1 {
 
 button {
 	transition: all 0.1s ease-in-out;
+}
+
+p {
+	letter-spacing: 2px;
 }
